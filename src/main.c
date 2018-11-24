@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include <stdio.h>
 
 static int print_message(void *message);
@@ -10,7 +11,10 @@ int main()
 static int print_message(void *message)
 {
 	while (1)
+	{
 		printf("%s\n", (const char *) message);
+		sleep(1);
+	}
 
 	return 0;
 }
