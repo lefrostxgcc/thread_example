@@ -5,6 +5,7 @@ m4/
 configure
 autoscan.log
 configure.scan
+*~
 *.o
 *.m4
 *.in
